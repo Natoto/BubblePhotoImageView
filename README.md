@@ -1,8 +1,9 @@
 # BubblePhotoImageView
-一个不规则图片气泡解决方案，图片撑到了边角哦
+一个不规则图片气泡解决方案，图片撑到了边角
 
+![示例2](https://github.com/Natoto/BubblePhotoImageView/blob/master/IMG_1690.PNG)
 ![示例](https://github.com/Natoto/BubblePhotoImageView/blob/master/IMG_1689.PNG)
-核心代码如下
+*核心代码如下
 ```object-c
 /**
  *  得到mask的图像
