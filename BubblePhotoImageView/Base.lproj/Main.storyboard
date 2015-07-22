@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tw.png" translatesAutoresizingMaskIntoConstraints="NO" id="B6i-6W-wmS">
+                                <rect key="frame" x="10" y="210" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8bK-tW-H5t"/>
+                                    <constraint firstAttribute="height" constant="150" id="jsB-d1-vIU"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N9K-eZ-hm4">
+                                <rect key="frame" x="10" y="43" width="300" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ei2-uO-NNZ">
+                                <rect key="frame" x="10" y="377" width="300" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ei2-uO-NNZ" firstAttribute="leading" secondItem="B6i-6W-wmS" secondAttribute="leading" id="0ao-g0-eIY"/>
+                            <constraint firstItem="ei2-uO-NNZ" firstAttribute="top" secondItem="B6i-6W-wmS" secondAttribute="bottom" constant="17" id="2iZ-rs-XjU"/>
+                            <constraint firstItem="ei2-uO-NNZ" firstAttribute="width" secondItem="B6i-6W-wmS" secondAttribute="width" id="A5P-4r-UXY"/>
+                            <constraint firstItem="N9K-eZ-hm4" firstAttribute="height" secondItem="B6i-6W-wmS" secondAttribute="height" id="AJx-j8-nUo"/>
+                            <constraint firstItem="N9K-eZ-hm4" firstAttribute="leading" secondItem="B6i-6W-wmS" secondAttribute="leading" id="B6o-SQ-0Kx"/>
+                            <constraint firstItem="B6i-6W-wmS" firstAttribute="width" secondItem="N9K-eZ-hm4" secondAttribute="width" id="EWF-OB-1ve"/>
+                            <constraint firstAttribute="centerY" secondItem="B6i-6W-wmS" secondAttribute="centerY" id="Ue5-9W-FEA"/>
+                            <constraint firstItem="ei2-uO-NNZ" firstAttribute="height" secondItem="B6i-6W-wmS" secondAttribute="height" id="YSx-98-DFi"/>
+                            <constraint firstItem="B6i-6W-wmS" firstAttribute="top" secondItem="N9K-eZ-hm4" secondAttribute="bottom" constant="17" id="h22-fp-Ldt"/>
+                            <constraint firstAttribute="centerX" secondItem="B6i-6W-wmS" secondAttribute="centerX" id="wMF-8C-xUH"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bubblePhotoImageView" destination="N9K-eZ-hm4" id="r6Z-m1-vAX"/>
+                        <outlet property="bubbleimg" destination="ei2-uO-NNZ" id="zkN-rq-6T6"/>
+                        <outlet property="imageView" destination="B6i-6W-wmS" id="gzd-GL-Xxt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tw.png" width="69" height="69"/>
+    </resources>
+</document>
